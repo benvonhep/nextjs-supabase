@@ -30,10 +30,8 @@ const WorkoutCard = ({ data, handleDelete }) => {
           </p>
 
           <div className={styles.buttons}>
-            <Link href={`/edit/${item.id}`}>
-              <a className={styles.edit}>
+            <Link href={`/edit/${item.id}`} className={styles.edit}>
                 <FiEdit />
-              </a>
             </Link>
             <button
               onClick={() => handleDelete(item.id)}
